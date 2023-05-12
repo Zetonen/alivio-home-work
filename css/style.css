@@ -1,0 +1,233 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #424242;
+}
+
+/* header */
+.header {
+  padding: 17px 0;
+}
+
+.head-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu-list {
+  display: flex;
+  gap: 72px;
+}
+
+.nav-menu-list-item-link {
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #292929;
+}
+
+.login-form {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.login-form-item-entrance-btn {
+  font-family: "Lato";
+  line-height: 1.2;
+  color: #000000;
+}
+
+.login-form-item-start-btn {
+  padding: 12px 49px;
+  font-family: "Lato";
+  line-height: 1.25;
+  text-align: center;
+  color: #ffffff;
+  background-color: #01996d;
+  border: 1px solid #01996d;
+  border-radius: 4px;
+}
+
+/* main */
+
+/* hero */
+
+.hero {
+  padding-top: 175px;
+  height: calc(100vh - 85px);
+  background-image: linear-gradient(
+      112.58deg,
+      #ffffff 18.15%,
+      rgba(255, 255, 255, 0) 53.07%
+    ),
+    url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(90vw) calc(100vh - 85px); /*але нема ефекту cover... можливо слої абсолютами... але чи можна челез слої bg?  */
+}
+
+.hero-container {
+  max-width: 1370px;
+  width: 71vw;
+  margin: 0 auto;
+}
+
+.hero-title {
+  max-width: 440px;
+  margin-bottom: 30px;
+  font-family: "Georgia";
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 1.14;
+  color: #01996d;
+}
+
+.hero-text {
+  max-width: 420px;
+  margin-bottom: 18px;
+  line-height: 1.55;
+  color: #484848;
+}
+
+.hero-btn {
+  padding: 19px 49px;
+  font-family: "Lato";
+  line-height: 1.25;
+  color: #ffffff;
+  background: #01996d;
+  border: 1px solid #01996d;
+  border-radius: 4px;
+}
+
+/* description */
+
+.description-work {
+  padding-top: 169px;
+  padding-bottom: 51px;
+}
+.description-work-container {
+  max-width: 1415px;
+  margin: 0 auto;
+}
+.description-work-text {
+  display: flex;
+  align-items: center;
+}
+.description-work-caption {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.57;
+}
+.description-work-text-title {
+  font-family: "Georgia", serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.57;
+  color: #01996d;
+}
+.description-work-text-text {
+  width: 670px;
+  font-weight: 500;
+}
+
+/* success */
+
+.success-story {
+  padding-top: 229px;
+  padding-bottom: 177px;
+  background-color: #245852;
+}
+.success-story-container {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+  max-width: 1507px;
+  margin: 0 auto;
+}
+.success-story-wrrap-text {
+  color: #ffffff;
+}
+.success-story-title {
+  width: 580px;
+  margin-bottom: 33px;
+  font-family: "Georgia", serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.57;
+}
+.success-story-text {
+  margin-bottom: 57px;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.57;
+}
+.success-story-btn {
+  padding: 19px 49px;
+  line-height: 1.25;
+  color: #ffffff;
+  background: #01996d;
+  border: 1px solid #01996d;
+  border-radius: 4px;
+}
+.success-story-video > img {
+  border-radius: 17px;
+}
+
+/* footer */
+
+.footer {
+  background-color: #245852;
+}
+
+/* footer-social-media */
+
+.footer-social-media {
+    display: flex;
+}
+.footer-social-media-item {
+}
+.footer-social-media-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.footer-social-media-item-link.gradient {
+  width: 91px;
+  height: 84px;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    #80a4ce 0deg,
+    #f289aa 60deg,
+    #c68bf0 106.09deg,
+    #d164da 153.75deg,
+    #c963e8 221.25deg,
+    #bfc2e8 258.75deg,
+    #ffc999 288.75deg,
+    #d0d8c9 315deg,
+    #bad0f1 334.13deg,
+    #ced8cb 358.97deg,
+    rgba(255, 255, 255, 0) 360deg
+  );
+}
+.footer-social-media-item-link.white {
+  width: 83px;
+  height: 77px;
+  background-color: #ffffff;
+}
+.footer-social-media-item-link-icon {
+}
+
+/* footer-app-store */
+
+.footer-app-store {
+    display: flex;
+}
+.footer-app-store-item {
+}
+.footer-app-store-item-link {
+}
