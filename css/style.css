@@ -23,6 +23,7 @@ h2 {
 /* header */
 .header {
   padding: 17px 0;
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .header-container {
@@ -39,6 +40,12 @@ h2 {
     calc(25px + (30 - 25) * ((100vw - 1400px) / (1920 - 1400)))
   );
   color: #01996d;
+  transition: 250ms text-shadow ease-in-out, 250ms color ease-in-out;
+}
+
+.head-logo-link:hover {
+  color: #27b68d;
+  text-shadow: -3px 0px 30px #d9f0ea;
 }
 
 .nav-menu {
@@ -58,6 +65,12 @@ h2 {
   font-weight: 500;
   line-height: 1.2;
   color: #292929;
+  transition: 250ms text-shadow ease-in-out, 250ms color ease-in-out;
+}
+
+.nav-menu-list-item-link:hover {
+  color: #01996d;
+  text-shadow: -3px 0px 20px #d9f0ea;
 }
 
 .login-form {
@@ -74,6 +87,12 @@ h2 {
   font-size: 20px;
   line-height: 1.2;
   color: #000000;
+  transition: 250ms text-shadow ease-in-out, 250ms color ease-in-out;
+}
+
+.login-form-item-entrance-btn:hover {
+  color: #01996d;
+  text-shadow: -3px 0px 20px #d9f0ea;
 }
 
 .login-form-item-start-btn {
@@ -85,6 +104,13 @@ h2 {
   background-color: #01996d;
   border: 1px solid #01996d;
   border-radius: 4px;
+  transition: 250ms text-shadow ease-in-out, 250ms background-color ease-in-out, 250ms border ease-in-out;
+}
+
+.login-form-item-start-btn:hover {
+  background-color: #27b68d;
+  border: 1px solid #27b68d;
+  box-shadow:-3px 0px 20px #d9f0ea ;
 }
 
 /* main */
@@ -92,20 +118,30 @@ h2 {
 /* hero */
 
 .hero {
+  position: relative;
   padding-top: min(
     175px,
     calc(125px + (175 - 125) * ((100vw - 1400px) / (1920 - 1400)))
   );
   height: calc(100vh - 85px);
-  background-image: linear-gradient(
+  background: linear-gradient(
       112.58deg,
       #ffffff 18.15%,
       rgba(255, 255, 255, 0) 53.07%
     ),
-    url("../img/hero-bg.jpg");
+    rgba(0, 0, 0, 0.1);
+}
+
+.hero-bg-img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+  background-image: url("../img/hero-bg.jpg");
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: calc(90vw) calc(100vh - 85px); /*але нема ефекту cover... можливо слої абсолютами... але чи можна челез слої bg?  */
+  background-size: cover;
 }
 
 .hero-container {
@@ -154,6 +190,13 @@ h2 {
   background: #01996d;
   border: 1px solid #01996d;
   border-radius: 4px;
+  transition: 250ms text-shadow ease-in-out, 250ms background-color ease-in-out, 250ms border ease-in-out;
+}
+
+.hero-btn:hover{
+  background-color: #27b68d;
+  border: 1px solid #27b68d;
+  box-shadow:-3px 0px 20px #d9f0ea ;
 }
 
 /* description */
@@ -336,8 +379,14 @@ h2 {
   background: #01996d;
   border: 1px solid #01996d;
   border-radius: 4px;
+  transition: 250ms text-shadow ease-in-out, 250ms background-color ease-in-out, 250ms border ease-in-out;
 }
 
+.success-story-btn:hover{
+  background-color: #27b68d;
+  border: 1px solid #01996d;
+  box-shadow:-3px 0px 20px #01996d ;
+}
 .success-story-video {
   position: relative;
 }
@@ -533,6 +582,13 @@ h2 {
   background: #01996d;
   border: 1px solid #01996d;
   border-radius: 4px;
+  transition: 250ms text-shadow ease-in-out, 250ms background-color ease-in-out, 250ms border ease-in-out;
+}
+
+.our-product-desc-btn:hover{
+  background-color: #27b68d;
+  border: 1px solid #27b68d;
+  box-shadow:-3px 0px 20px #d9f0ea ;
 }
 
 /* footer */
@@ -567,6 +623,7 @@ h2 {
   );
   line-height: 1.375;
   color: #ffffff;
+  transition: 250ms text-shadow ease-in-out, 250ms color ease-in-out;
 }
 .footer-nav-list {
   justify-self: start;
@@ -585,6 +642,12 @@ h2 {
   );
   line-height: 1.2;
   color: #ffffff;
+  transition: 250ms text-shadow ease-in-out, 250ms color ease-in-out;
+}
+
+.footer-logo-link:hover, .footer-nav-list-item-link:hover {
+  color: #35b994;
+  text-shadow: -3px 0px 20px #307169;
 }
 
 .footer-wrapper-store-meadia {
@@ -682,7 +745,7 @@ h2 {
     230px,
     calc(200px + (230 - 200) * ((100vw - 1400px) / (1920 - 1400)))
   );
-  transform: translate(-35%,-100%);
+  transform: translate(-35%, -100%);
   font-family: "Poppins", sans-serif;
   font-size: min(
     20px,
