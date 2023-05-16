@@ -43,7 +43,7 @@ h2 {
   transition: 250ms text-shadow ease-in-out, 250ms color ease-in-out;
 }
 
-.head-logo-link:hover {
+.head-logo-link:is(:hover, :focus) {
   color: #27b68d;
   text-shadow: -3px 0px 30px #d9f0ea;
 }
@@ -68,9 +68,10 @@ h2 {
   transition: 250ms text-shadow ease-in-out, 250ms color ease-in-out;
 }
 
-.nav-menu-list-item-link:hover {
+.nav-menu-list-item-link:is(:hover, :focus) {
   color: #01996d;
   text-shadow: -3px 0px 20px #d9f0ea;
+  outline-offset: 8px;
 }
 
 .login-form {
@@ -90,9 +91,12 @@ h2 {
   transition: 250ms text-shadow ease-in-out, 250ms color ease-in-out;
 }
 
-.login-form-item-entrance-btn:hover {
+.login-form-item-entrance-btn:is(:hover, :focus) {
   color: #01996d;
   text-shadow: -3px 0px 20px #d9f0ea;
+  outline: 2px solid #000000;
+  outline-offset: 12px;
+  border-radius:4px;
 }
 
 .login-form-item-start-btn {
@@ -107,7 +111,7 @@ h2 {
   transition: 250ms text-shadow ease-in-out, 250ms background-color ease-in-out, 250ms border ease-in-out;
 }
 
-.login-form-item-start-btn:hover {
+.login-form-item-start-btn:is(:hover, :focus)  {
   background-color: #27b68d;
   border: 1px solid #27b68d;
   box-shadow:-3px 0px 20px #d9f0ea ;
@@ -193,7 +197,7 @@ h2 {
   transition: 250ms text-shadow ease-in-out, 250ms background-color ease-in-out, 250ms border ease-in-out;
 }
 
-.hero-btn:hover{
+.hero-btn:is(:hover, :focus){
   background-color: #27b68d;
   border: 1px solid #27b68d;
   box-shadow:-3px 0px 20px #d9f0ea ;
@@ -382,7 +386,7 @@ h2 {
   transition: 250ms text-shadow ease-in-out, 250ms background-color ease-in-out, 250ms border ease-in-out;
 }
 
-.success-story-btn:hover{
+.success-story-btn:is(:hover, :focus){
   background-color: #27b68d;
   border: 1px solid #01996d;
   box-shadow:-3px 0px 20px #01996d ;
@@ -585,7 +589,7 @@ h2 {
   transition: 250ms text-shadow ease-in-out, 250ms background-color ease-in-out, 250ms border ease-in-out;
 }
 
-.our-product-desc-btn:hover{
+.our-product-desc-btn:is(:hover, :focus){
   background-color: #27b68d;
   border: 1px solid #27b68d;
   box-shadow:-3px 0px 20px #d9f0ea ;
@@ -645,9 +649,10 @@ h2 {
   transition: 250ms text-shadow ease-in-out, 250ms color ease-in-out;
 }
 
-.footer-logo-link:hover, .footer-nav-list-item-link:hover {
+.footer-logo-link:is(:hover, :focus), .footer-nav-list-item-link:is(:hover, :focus) {
   color: #35b994;
   text-shadow: -3px 0px 20px #307169;
+  outline-offset: 8px;
 }
 
 .footer-wrapper-store-meadia {
