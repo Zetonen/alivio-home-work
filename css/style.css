@@ -94,10 +94,13 @@ h2 {
 .login-form-item-entrance-btn:is(:hover, :focus) {
   color: #01996d;
   text-shadow: -3px 0px 20px #d9f0ea;
+}
+.login-form-item-entrance-btn:focus{
   outline: 2px solid #000000;
   outline-offset: 12px;
   border-radius:4px;
 }
+
 
 .login-form-item-start-btn {
   padding: 12px 49px;
